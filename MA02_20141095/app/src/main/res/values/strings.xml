@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">scheduler</string>
+    <string name="api_url">https://openapi.naver.com/v1/search/local.xml?display=10&amp;sort=random&amp;start=1&amp;query=</string>
+    <string name="client_id">beAH0vJb6EiqenSa6hIF</string>
+    <string name="client_secret">j2NImNTYJa</string>
+    <string name="btDetailText">location</string>
+    <string name="btnFriend">add friend</string>
+    <string name="hintTitle">Input title</string>
+    <string name="hintContent">Input content</string>
+    <string name="btnDate">Pick date</string>
+    <string name="btnTime">Pick time</string>
+    <string name="btnPlace">Input place to meet</string>
+    <string name="btnAdd">Add your plan</string>
+    <string name="intro_1">Manage your schedules easily!</string>
+    <string name="intro_2">Add &amp; Manage\nDate, Time, Place\nat once!</string>
+    <string name="intro_3">Don\'t forget\nyour schedule!</string>
+    <string name="intro_3_1">Just set an alarm</string>
+</resources>

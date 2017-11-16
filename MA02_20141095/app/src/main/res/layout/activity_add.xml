@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="final_project.mobile.lecture.ma02_20141095.AddActivity"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintTitle"
+                android:id="@+id/etTitle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til2"
+            android:layout_below="@+id/til1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintContent"
+                android:id="@+id/etContent" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_event_gray"
+                android:id="@+id/imageView4" />
+
+            <Button
+                android:background="#00ff0000"
+                android:text="@string/btnDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/pickDate"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_time_gray"
+                android:id="@+id/imageView6" />
+
+            <Button
+                android:background="#00ff0000"
+                android:text="@string/btnTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pickTime12"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_explore_gray"
+                android:id="@+id/imageView7" />
+
+            <Button
+                android:background="#00ff0000"
+                android:text="@string/btnPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btPlace"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_friend_gray"
+                android:id="@+id/imageView9" />
+
+            <Button
+                android:background="#00ff0000"
+                android:text="@string/btnFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btFriend" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/custom_button"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btRegister"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp" />
+
+
+</RelativeLayout>

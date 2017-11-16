@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="final_project.mobile.lecture.ma02_20141095.DetailActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <fragment
+            android:id="@+id/google_map"
+            android:layout_width="match_parent"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_weight="0.61"
+            android:layout_height="300dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivFace"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="16dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.61">
+
+            <ImageView
+                android:layout_height="44dp"
+                android:src="@drawable/ic_alarm_black_24dp"
+                android:id="@+id/imageView3"
+                android:layout_weight="1.29"
+                android:layout_marginLeft="8dp"
+                android:layout_width="30dp"
+                android:baselineAlignBottom="false"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="TextView"
+                android:id="@+id/tvDate"
+                android:layout_width="323dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.49"
+            android:weightSum="1"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:text="@string/btDetailText"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btStart"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1.03"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/background_floating_material_light"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="4dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btSms"
+                android:text="text to friend"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/background_floating_material_light"
+                android:layout_marginRight="8dp" />
+
+            <Button
+                android:text="set alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btAlarm"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/background_floating_material_light"
+                android:background="@drawable/custom_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
